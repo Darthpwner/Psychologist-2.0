@@ -10,7 +10,7 @@
             <objects>
                 <splitViewController id="cPn-Z5-K35" sceneMemberID="viewController">
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="masterViewController" id="T7t-q8-CRD"/>
+                        <segue destination="d5v-Fa-AZg" kind="relationship" relationship="masterViewController" id="T7t-q8-CRD"/>
                         <segue destination="zou-TU-RaX" kind="relationship" relationship="detailViewController" id="z6g-eq-jRg"/>
                     </connections>
                 </splitViewController>
@@ -18,7 +18,7 @@
             </objects>
             <point key="canvasLocation" x="-814" y="641"/>
         </scene>
-        <!--View Controller-->
+        <!--Psychologist-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Psychologist" customModuleProvider="target" sceneMemberID="viewController">
@@ -76,7 +76,7 @@
                                 </variation>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What do you see in your dreams?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="ekP-Hs-hzM">
-                                <rect key="frame" x="30" y="28" width="541" height="69"/>
+                                <rect key="frame" x="30" y="72" width="541" height="69"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="69" id="bBR-ll-XqW"/>
                                 </constraints>
@@ -108,9 +108,11 @@
                             </mask>
                         </variation>
                     </view>
+                    <navigationItem key="navigationItem" title="Psychologist" id="1la-fE-pa0"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1032" y="289"/>
         </scene>
         <!--Happiness View Controller-->
         <scene sceneID="uRW-5i-bcW">
@@ -161,6 +163,24 @@
                 </panGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="220" y="1042"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="SpB-vw-Lb0">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="d5v-Fa-AZg" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="kKm-ec-UtP">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="6ua-29-Yga"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Mgs-j8-VPO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="54" y="296"/>
         </scene>
     </scenes>
 </document>
