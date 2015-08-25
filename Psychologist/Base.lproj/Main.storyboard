@@ -11,7 +11,7 @@
                 <splitViewController id="cPn-Z5-K35" sceneMemberID="viewController">
                     <connections>
                         <segue destination="d5v-Fa-AZg" kind="relationship" relationship="masterViewController" id="T7t-q8-CRD"/>
-                        <segue destination="zou-TU-RaX" kind="relationship" relationship="detailViewController" id="z6g-eq-jRg"/>
+                        <segue destination="asi-f5-UmP" kind="relationship" relationship="detailViewController" id="z6g-eq-jRg"/>
                     </connections>
                 </splitViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="afa-km-gFI" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -44,6 +44,9 @@
                                         <exclude reference="A51-KA-6LS"/>
                                     </mask>
                                 </variation>
+                                <connections>
+                                    <segue destination="asi-f5-UmP" kind="showDetail" identifier="happy" id="znM-pM-Dm2"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Eje-Fu-gwb">
                                 <rect key="frame" x="234" y="230" width="132" height="41"/>
@@ -59,6 +62,9 @@
                                         <exclude reference="2w9-fS-5c8"/>
                                     </mask>
                                 </variation>
+                                <connections>
+                                    <segue destination="asi-f5-UmP" kind="showDetail" identifier="sad" id="tuG-wB-OHR"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RXE-cz-GG8">
                                 <rect key="frame" x="255" y="328" width="91" height="41"/>
@@ -74,6 +80,9 @@
                                         <exclude reference="QNb-zk-kWu"/>
                                     </mask>
                                 </variation>
+                                <connections>
+                                    <segue destination="asi-f5-UmP" kind="showDetail" identifier="meh" id="s43-yF-n8O"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What do you see in your dreams?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="ekP-Hs-hzM">
                                 <rect key="frame" x="30" y="72" width="541" height="69"/>
@@ -117,7 +126,7 @@
         <!--Happiness View Controller-->
         <scene sceneID="uRW-5i-bcW">
             <objects>
-                <viewController id="zou-TU-RaX" customClass="HappinessViewController" customModule="Happiness" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="zou-TU-RaX" customClass="HappinessViewController" customModule="Psychologist" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ap5-78-02g"/>
                         <viewControllerLayoutGuide type="bottom" id="bTY-Of-VnA"/>
@@ -126,7 +135,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="Vj5-iH-7Ra" customClass="FaceView" customModule="Happiness" customModuleProvider="target">
+                            <view contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="Vj5-iH-7Ra" customClass="FaceView" customModule="Psychologist" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <gestureRecognizers/>
@@ -151,6 +160,7 @@
                             <constraint firstAttribute="trailing" secondItem="Vj5-iH-7Ra" secondAttribute="trailing" id="ghb-YH-bHi"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="z43-Sw-THc"/>
                     <connections>
                         <outlet property="faceView" destination="Vj5-iH-7Ra" id="t6M-1v-Laz"/>
                     </connections>
@@ -162,7 +172,7 @@
                     </connections>
                 </panGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="220" y="1042"/>
+            <point key="canvasLocation" x="1560" y="1086"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="SpB-vw-Lb0">
@@ -182,5 +192,26 @@
             </objects>
             <point key="canvasLocation" x="54" y="296"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="7ce-UN-AeY">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="asi-f5-UmP" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ino-6q-Jxu">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="zou-TU-RaX" kind="relationship" relationship="rootViewController" id="c83-0R-Gjv"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0rq-f5-Z9P" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="748" y="1086"/>
+        </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="znM-pM-Dm2"/>
+    </inferredMetricsTieBreakers>
 </document>

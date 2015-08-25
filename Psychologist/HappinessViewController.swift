@@ -10,6 +10,24 @@ import UIKit
 
 class HappinessViewController: UIViewController, FaceViewDataSource
 {
+    var happiness: Int = 60  // 0 = very sad, 100 = ecstatic
+        {
+        didSet {
+            happiness = min(max(happiness, 0), 100) //Limit happiness to be between 0 and 100
+            println("Happiness = \(happiness)")
+            updateUI()
+        }
+    }
+    
+    func updateUI(){
+        faceView?.setNeedsDisplay()  //Redraws automatically for you
+        title = "\(happiness)"
+    }
+    
+    func smilinessForFaceView(sender: FaceView) -> Double? {
+        return Double(happiness - 50)/50
+    }
+    
     private struct Constants {
         static let HappinessGestureScale: CGFloat = 4
     }
@@ -33,22 +51,5 @@ class HappinessViewController: UIViewController, FaceViewDataSource
             faceView.dataSource = self
             faceView.addGestureRecognizer(UIPinchGestureRecognizer(target: faceView, action: "scale:"))
         }
-    }
-    
-    var happiness: Int = 100  // 0 = very sad, 100 = ecstatic
-    {
-        didSet {
-            happiness = min(max(happiness, 0), 100) //Limit happiness to be between 0 and 100
-            println("Happiness = \(happiness)")
-            updateUI()
-        }
-    }
-    
-    private func updateUI(){
-        faceView.setNeedsDisplay()  //Redraws automatically for you
-    }
-    
-    func smilinessForFaceView(sender: FaceView) -> Double? {
-        return Double(happiness - 50)/50
     }
 }
