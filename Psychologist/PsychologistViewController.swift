@@ -27,6 +27,7 @@ class PsychologistViewController: UIViewController {
                     case "happy": hvc.happiness = 100
                     case "nothing": hvc.happiness = 25
                     default: hvc.happiness = 50
+                    
                 }
             }
         }
