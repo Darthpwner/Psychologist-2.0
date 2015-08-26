@@ -93,9 +93,27 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F6X-Mc-8PG">
+                                <rect key="frame" x="252" y="389" width="96" height="41"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="96" id="We6-u2-hHR"/>
+                                    <constraint firstAttribute="height" constant="30" id="ay0-4Z-7Oh"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="Nothing!">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="We6-u2-hHR"/>
+                                        <exclude reference="ay0-4Z-7Oh"/>
+                                    </mask>
+                                </variation>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="F6X-Mc-8PG" firstAttribute="top" secondItem="RXE-cz-GG8" secondAttribute="bottom" constant="14" id="3ME-V0-lrY"/>
                             <constraint firstItem="RXE-cz-GG8" firstAttribute="centerX" secondItem="OQJ-M9-3MG" secondAttribute="centerX" id="8Ld-bz-HOj"/>
                             <constraint firstItem="RXE-cz-GG8" firstAttribute="top" secondItem="OQJ-M9-3MG" secondAttribute="bottom" constant="8" symbolic="YES" id="8VH-cG-rN3"/>
                             <constraint firstItem="Eje-Fu-gwb" firstAttribute="centerX" secondItem="OQJ-M9-3MG" secondAttribute="centerX" id="Emj-IA-JGj"/>
@@ -104,6 +122,7 @@
                             <constraint firstItem="OQJ-M9-3MG" firstAttribute="centerX" secondItem="ekP-Hs-hzM" secondAttribute="centerX" id="OoI-JO-pQa"/>
                             <constraint firstItem="ekP-Hs-hzM" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" symbolic="YES" id="RIv-8i-jLI"/>
                             <constraint firstItem="ekP-Hs-hzM" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="14" id="TKM-P6-5FQ"/>
+                            <constraint firstItem="F6X-Mc-8PG" firstAttribute="centerX" secondItem="RXE-cz-GG8" secondAttribute="centerX" id="YCc-fS-pxa"/>
                             <constraint firstItem="OQJ-M9-3MG" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="aY5-AK-It7"/>
                             <constraint firstItem="OQJ-M9-3MG" firstAttribute="top" secondItem="Eje-Fu-gwb" secondAttribute="bottom" constant="8" symbolic="YES" id="cWo-gS-Cco"/>
                             <constraint firstItem="ekP-Hs-hzM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cuH-V1-2K5"/>
@@ -118,10 +137,13 @@
                         </variation>
                     </view>
                     <navigationItem key="navigationItem" title="Psychologist" id="1la-fE-pa0"/>
+                    <connections>
+                        <segue destination="asi-f5-UmP" kind="showDetail" identifier="nothing" id="SEf-dK-H4L"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1032" y="289"/>
+            <point key="canvasLocation" x="952" y="-202"/>
         </scene>
         <!--Happiness View Controller-->
         <scene sceneID="uRW-5i-bcW">
@@ -208,10 +230,10 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0rq-f5-Z9P" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="748" y="1086"/>
+            <point key="canvasLocation" x="802" y="586"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="znM-pM-Dm2"/>
+        <segue reference="SEf-dK-H4L"/>
     </inferredMetricsTieBreakers>
 </document>
