@@ -15,6 +15,7 @@
 		6B781F811B885B3F00EBE89C /* PsychologistTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B781F801B885B3F00EBE89C /* PsychologistTests.swift */; };
 		6B781F941B8A629700EBE89C /* FaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B781F921B8A629700EBE89C /* FaceView.swift */; };
 		6B781F951B8A629700EBE89C /* HappinessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B781F931B8A629700EBE89C /* HappinessViewController.swift */; };
+		6B781F971B8D8A2F00EBE89C /* TextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B781F961B8D8A2F00EBE89C /* TextViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,7 @@
 		6B781F801B885B3F00EBE89C /* PsychologistTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PsychologistTests.swift; sourceTree = "<group>"; };
 		6B781F921B8A629700EBE89C /* FaceView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FaceView.swift; sourceTree = "<group>"; };
 		6B781F931B8A629700EBE89C /* HappinessViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HappinessViewController.swift; sourceTree = "<group>"; };
+		6B781F961B8D8A2F00EBE89C /* TextViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +87,7 @@
 				6B781F931B8A629700EBE89C /* HappinessViewController.swift */,
 				6B781F6C1B885B3E00EBE89C /* PsychologistViewController.swift */,
 				6B781F6E1B885B3E00EBE89C /* Main.storyboard */,
+				6B781F961B8D8A2F00EBE89C /* TextViewController.swift */,
 				6B781F681B885B3E00EBE89C /* Supporting Files */,
 			);
 			path = Psychologist;
@@ -218,6 +221,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6B781F971B8D8A2F00EBE89C /* TextViewController.swift in Sources */,
 				6B781F6D1B885B3E00EBE89C /* PsychologistViewController.swift in Sources */,
 				6B781F6B1B885B3E00EBE89C /* AppDelegate.swift in Sources */,
 				6B781F951B8A629700EBE89C /* HappinessViewController.swift in Sources */,
