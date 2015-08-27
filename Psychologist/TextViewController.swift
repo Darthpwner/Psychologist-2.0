@@ -9,5 +9,15 @@
 import UIKit
 
 class TextViewController: UIViewController {
-
+    @IBOutlet weak var textView: UITextView! {
+        didSet {
+            textView.text = text    //TextView is being set by the system
+        }
+    }
+    
+    var text: String = "" {
+        didSet {
+            textView?.text = text
+        }
+    }
 }
